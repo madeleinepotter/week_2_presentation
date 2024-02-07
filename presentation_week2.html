@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>MODIS Aqua and Terra</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Madeleine Potter" />
+    <script src="libs/header-attrs-2.25/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom-style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# MODIS Aqua and Terra
+]
+.author[
+### Madeleine Potter
+]
+.date[
+### 01/16/2023 (updated: 2024-02-07)
+]
+
+---
+
+
+
+
+
+# Summary: What is MODIS?
+
+- Moderate Resolution Imaging Spectroradiometer (MODIS) is a
+key sensor aboard two NASA observation satellites Terra and Aqua.
+
+- The first MODIS sensor was on the Terra satellite, launched in 1999 and the second on the Aqua satellite launched in 2002. 
+
+- While the designed life span for both MODIS instruments was 6 years, they are still running today, with the MODIS Terra mission ending in 2025 and the MODIS Aqua mission in 2026.
+
+- Terra crosses the equator around 10:30am (MLT) while Aqua crosses the equator roughly 2 hours after. 
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="terra_aqua.jpg" alt="Terra and Aqua Satellites (SOLETOP, n.d)" width="40%" /&gt;
+&lt;p class="caption"&gt;Terra and Aqua Satellites (SOLETOP, n.d)&lt;/p&gt;
+&lt;/div&gt;
+---
+
+# Summary: MODIS Aqua and Terra Sensor Information
+
+The MODIS sensors collect both atmospheric and land surface information, on things such as:
+
+- The properties, distribution and frequency of cloud cover.
+- Properties of aerosols.
+- Level of photosynthetic activity of land and marine plants.
+- Land surface changes and temperatures.
+- Albedo.
+
+
+#Resolutions
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Resolution &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Information &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Spatial &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 250m (bands 1-2), 500m (bands 3-7), 1000m (bands 8-36) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Spectral &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Multispectral (36 spectral bands) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Temporal &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1-2 days &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Radiometric &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 12 bit &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+# Summary: Image Examples
+
+MODIS Aqua captured the nutrient enrichment (mainly nitrogen and phosphorous) of the Gulf of Mexico by the Mississippi River. This enrichment creates a hypoxic environment, which is now known as the Gulf of Mexico Dead Zone. 
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="gulf_mexico.jpg" alt="Gulf of Mexico Dead Zone. April 7th 2009 (Source: NASA Earth Observatory)" width="40%" /&gt;
+&lt;p class="caption"&gt;Gulf of Mexico Dead Zone. April 7th 2009 (Source: NASA Earth Observatory)&lt;/p&gt;
+&lt;/div&gt;
+
+---
+
+# Applications: Studies That Have Used MODIS
+
+### Assessing Sea Surface Temperature Trends &lt;a name=cite-garcia-monteiroSurfaceTemperatureTrends2022&gt;&lt;/a&gt;([García-Monteiro, Sobrino, Julien, Sòria, and Skokovic, 2022](#bib-garcia-monteiroSurfaceTemperatureTrends2022)) 
+
+This study used MODIS data to map sea surface temperatures of the Mediterranean Sea and
+analyse the trends between 2003 and 2019. The paper mentioned the issue of cloudiness when 
+interpreting satellite estimations as thermal radiometers cannot observe through clouds. 
+
+
+### Monitoring Desertification &lt;a name=cite-fengMonitoringDesertificationUsing2022&gt;&lt;/a&gt;([Feng, Wang, Liu, Kang, Chen, Guo, and Zhi, 2022](#bib-fengMonitoringDesertificationUsing2022)) 
+
+This study used machine learning techniques on MODIS imagery to identify spatio-temporal
+patterns of desertification in China between 2000 and 2018. This study also used four
+MODIS products which were surface reflectance, albedo, vegetation index, and land-surface temperature.
+
+---
+
+# Applications: Studies That Have Used MODIS
+
+### Urban Heat Island Assessment
+
+This study used surface temperature, mean albedo and NDVI products from the MODIS sensor aboard
+the TERRA satellite to measure the urban heat island effect in Brazil. Urban heat island intensity was measured by calculating the difference between the mean temperature of the pixels in the urban fringes and the urban areas.However, due to the low
+spatial resolution of MODIS, an intra-urban analysis could not be done and instead further investigation is needed. 
+
+### Detection of Algal Blooms &lt;a name=cite-germanDetectionAlgalBlooms2017&gt;&lt;/a&gt;([Germán, Tauro, Scavuzzo, and Ferral, 2017](#bib-germanDetectionAlgalBlooms2017))
+
+This study used daily MODIS imagery to detect chlorophyll-a concentrations and built a cloud-free
+time series of 2001-2014. By assessing this data, the paper suggested a clear range of chlorophyll-a values in which the San Roque Dam is going through a bloom event, allowing for better identification and possibilities for an early warning system. This study demonstrated MODIS' abilities to monitor 
+water quality, even in in-land environments. 
+
+---
+
+#Reflection
+
+- From what I have learnt, MODIS has been extremely useful in assessing global environmental changes that have helped assess the trends and state of climate change over the past 20 years. 
+
+- Reading the studies that have used MODIS data demonstrated the vast array of environmental conditions to consider in terms of both the sensor and the phenomena you are observing. For example, in the urban heat island study, the urban heat island effect is more intense during periods of no clouds, which are also the best conditions for the MODIS sensor to collect data. The researchers therefore decided to only analyse images from Brazil's dry season.
+
+- Another thing I learnt is that due to the relatively long lifespan of the MODIS missions, studies can create time series for quite a long period of time. This shows it is usefulness for assessing things that might be slow changing. 
+
+- I found it cool that the MODIS sensors have managed to continue collecting data for a lot longer
+than it's designed lifespan. It made me wonder about why the mission for Terra is ending in 2025 
+and Aqua in 2026 however all the information I found was unclear. 
+
+
+
+---
+
+# References
+
+&lt;a name=bib-fengMonitoringDesertificationUsing2022&gt;&lt;/a&gt;[Feng, K., T.
+Wang, S. Liu, et al.](#cite-fengMonitoringDesertificationUsing2022)
+(2022). "Monitoring Desertification Using Machine-Learning Techniques
+with Multiple Indicators Derived from MODIS Images in Mu Us Sandy Land,
+China". In: _Remote Sensing_ 14.11 (11), p. 2663.
+
+&lt;a
+name=bib-garcia-monteiroSurfaceTemperatureTrends2022&gt;&lt;/a&gt;[García-Monteiro,
+S., J. A. Sobrino, Y. Julien, et
+al.](#cite-garcia-monteiroSurfaceTemperatureTrends2022) (2022).
+"Surface Temperature Trends in the Mediterranean Sea from MODIS Data
+during Years 2003–2019". In: _Regional Studies in Marine Science_ 49,
+p. 102086.
+
+&lt;a name=bib-germanDetectionAlgalBlooms2017&gt;&lt;/a&gt;[Germán, A., C. Tauro,
+M. C. Scavuzzo, et al.](#cite-germanDetectionAlgalBlooms2017) (2017).
+"Detection of Algal Blooms in a Eutrophic Reservoir Based on
+Chlorophyll-a Time Series Data from MODIS". In: _2017 IEEE
+International Geoscience and Remote Sensing Symposium (IGARSS)_. 2017
+IEEE International Geoscience and Remote Sensing Symposium (IGARSS). ,
+pp. 4008-4011.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"slideNumber": true,
+"navigation": "scroll",
+"theme": "style_mono_dark",
+"base_color": "#cbf7ed",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

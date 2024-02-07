@@ -1,0 +1,5 @@
+Resolution,Information
+Spatial,"250m (bands 1-2), 500m (bands 3-7), 1000m (bands 8-36)"
+Spectral,Multispectral (36 spectral bands)
+Temporal,1-2 days
+Radiometric,12 bit

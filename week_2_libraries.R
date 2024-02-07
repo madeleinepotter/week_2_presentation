@@ -1,0 +1,10 @@
+
+#install.packages("remotes")
+#remotes::install_github("yihui/xaringan")
+#install.packages("xaringanExtra")
+library(xaringanExtra)
+install.packages("xaringanthemer")
+library(xaringanthemer)
+library(knitr)
+install.packages("kabelExtra")
+library("kabelExtra")
